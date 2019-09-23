@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.css" type = "text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type = "text/css">
+        <link rel="stylesheet" href="css/Index_style.css" type = "text/css">
+        <title> products </title>
+    </head>
+    <body>
+
+            <h1 class = "text-secondary text-center "> adding Products and saving them in local storage </h1>
+        <section class = "py-5">
+            <div class = "container">
+                <input type="text" placeholder="Search..." class = "form-control" id = "search" name = "search">
+                <section>
+                    <div class = "row container pt-1"  id = "result"></div>
+                </section>
+
+
+                    <div class = "from-group mt-5 ">
+                        <label> The Product's Name :</label>
+                        <input type="text" name = "productName" class = "form-control" id = "productName" placeholder="Name*">
+                    </div>
+                    <div class = "form-group">
+                        <label> The Product's Desc : </label>
+                        <input type="text" placeholder="Desc*" name = "productDesc" id = "productDesc" class = "form-control">
+                    </div>
+                    <div class = "form-group">
+                        <label> The Product's Price : </label>
+                        <input type="text" placeholder="price*" name = "productPrice" id = "productPrice" class = "form-control">
+                    </div>
+                    <div class = "form-group">
+                        <label> The Product's Company : </label>
+                        <input type="text" placeholder="company*" name = "productCom" id = "productCom" class = "form-control">
+                    </div>
+                    <button class = " btn btn-primary px-4 py-3  float-right" id = "myBtn"> add product </button>
+                    <div class = "clearfix"></div>
+                </div>
+        </section>
+        <section class = "container">
+            <div class = "row" id = "productsRow"></div>
+        </section>
+
+        <script src = "js/jquery-3.js"></script>
+        <script src = "js/popper.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script src = "js/Index_js.js"></script>
+    </body>
+</html>
